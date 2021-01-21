@@ -1,4 +1,4 @@
-Mini projeto Fizzbuzz
+//Mini projeto Fizzbuzz
 
 const resultado = fizzBuzz(15);
 console.log(resultado);
@@ -15,5 +15,5 @@ if (entrada % 3 === 0)
  if (entrada % 5 === 0)
      return 'Buzz';
 
-//return entrada;
-//}
+return entrada;
+}
