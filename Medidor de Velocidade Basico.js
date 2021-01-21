@@ -1,19 +1,19 @@
-//Mini projeto Fizzbuzz
+//Mini projeto medidor de velocidade
 
-const resultado = fizzBuzz(15);
-console.log(resultado);
+verificavelocidade(130);
 
-function fizzBuzz(entrada) {
-   if (typeof entrada !== 'number')
-     return 'Não é um número';
+function verificavelocidade(velocidade) {
+    const velocidademax = 70
+    const KmPorPonto = 5
+    if (velocidade <= velocidademax) {
+        console.log("Parabens")
+    } else {
+        const pontos = Math.floor(((velocidade - velocidademax) / KmPorPonto));
+        if (pontos >= 12)
+            console.log('Carteira Suspensa');
+        else {
+            console.log('Pontos', pontos);
+        }
+    }
 
-  if (entrada % 3 === 0 && entrada % 5 === 0)
-    return 'FizzBuzz';
-if (entrada % 3 === 0)
-   return 'Fizz';
-
- if (entrada % 5 === 0)
-     return 'Buzz';
-
-return entrada;
 }
